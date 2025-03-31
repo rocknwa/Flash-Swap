@@ -1,13 +1,79 @@
-# Sample Hardhat Project
+ 
+# Flash-Swap
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project demonstrates a Hardhat use case. It comes with a contract, a test for that contract, and a script that deploys that contract.
 
-Try running some of the following tasks:
+## Overview
+
+Flash-Swap is a smart contract developed using Solidity and Hardhat. It implements a cross-protocol arbitrage trading strategy between Uniswap and Sushiswap. The contract allows users to fund the contract, check token balances, place trades, and initiate arbitrage by leveraging flash loans.
+
+## Features
+
+- **Flash Loan Arbitrage**: Executes arbitrage trades between Uniswap and Sushiswap to exploit price differences.
+- **Fund Contract**: Allows users to fund the contract with any ERC20 token.
+- **Balance Check**: Provides a public view of the contract's token balance.
+- **Trade Execution**: Facilitates token swaps using Uniswap and Sushiswap routers.
+- **Profitability Check**: Ensures trades are profitable before executing them.
+
+## Technologies Used
+
+- **Solidity**: For writing the smart contract.
+- **Hardhat**: For testing, deploying, and debugging the smart contract.
+- **Uniswap and Sushiswap Interfaces**: For interacting with the decentralized exchanges.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- Hardhat
+
+### Installation
+
+Clone the repository and install the dependencies:
 
 ```shell
-npx hardhat help
+git clone https://github.com/rocknwa/Flash-Swap.git
+cd Flash-Swap
+npm install
+```
+
+### Running the Project
+
+Compile the smart contract:
+
+```shell
+npx hardhat compile
+```
+
+Run the tests:
+
+```shell
 npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
+```
+
+Deploy the contract:
+
+```shell
 npx hardhat run scripts/deploy.js
 ```
+
+### Example Usage
+
+To start an arbitrage trade, you can call the `startArbitrage` function with the token you want to borrow and the amount:
+
+```solidity
+startArbitrage(tokenAddress, amount);
+```
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any changes.
+ 
+
+## Contact
+
+For any inquiries or support, please contact therock ani at anitherock44@gmail.com.
+
+---
