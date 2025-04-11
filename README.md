@@ -25,7 +25,7 @@ Flash-Swap is a smart contract developed using Solidity and Hardhat. It implemen
 
 ### Prerequisites
 
-- Node.js
+- Node.js version 18.14.1
 - npm or yarn
 - Hardhat
 
