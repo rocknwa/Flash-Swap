@@ -5,11 +5,11 @@ This project demonstrates a Hardhat use case. It comes with a contract, a test f
 
 ## Overview
 
-Flash-Swap is a smart contract developed using Solidity and Hardhat. It implements a cross-protocol arbitrage trading strategy between Uniswap and Sushiswap. The contract allows users to fund the contract, check token balances, place trades, and initiate arbitrage by leveraging flash loans.
+Flash-Swap is a smart contract developed using Solidity and Hardhat. It implements a cross-protocol triangular arbitrage trading strategy between Uniswap and Sushiswap. The contract allows users to fund the contract, check token balances, place trades, and initiate triangular arbitrage by leveraging flash loans.
 
 ## Features
 
-- **Flash Loan Arbitrage**: Executes arbitrage trades between Uniswap and Sushiswap to exploit price differences.
+- **Flash Loan Arbitrage**: Executes triangular arbitrage trades between Uniswap and Sushiswap to exploit price differences.
 - **Fund Contract**: Allows users to fund the contract with any ERC20 token.
 - **Balance Check**: Provides a public view of the contract's token balance.
 - **Trade Execution**: Facilitates token swaps using Uniswap and Sushiswap routers.
